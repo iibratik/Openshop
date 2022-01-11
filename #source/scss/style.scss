@@ -1,0 +1,20 @@
+@import "zerostyle.scss";
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css);
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header-nav{
+    background: #0C0C0C;
+}
+.list__link{
+    color: white !important;
+}
+.nav-content{
+    justify-content: flex-end !important;
+}
+.languages{
+    padding-right: 74px;
+}
