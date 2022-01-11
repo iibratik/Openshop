@@ -76,11 +76,40 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ---------------------------------------------------------- */
+@font-face {
+  font-family: 'NotoSans-Light';
+  src: url("../fonts/NotoSans-Light.ttf");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'NotoSans-Medium';
+  src: url("../fonts/NotoSans-Medium.ttf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'NotoSans-Regular';
+  src: url("../fonts/NotoSans-Regular.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'NotoSans-SemiBold';
+  src: url("../fonts/NotoSans-SemiBold.ttf");
+  font-weight: 600;
+}
+
 * {
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  font-family: NotoSans-Regular;
+}
+
+body {
+  background: #313131 !important;
 }
 
 .header-nav {
@@ -88,6 +117,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .list__link {
+  font-size: 14px;
+  letter-spacing: 0.05em;
   color: white !important;
 }
 
@@ -99,4 +130,68 @@ h1, h2, h3, h4, h5, h6 {
 
 .languages {
   padding-right: 74px;
+}
+
+.language-dropdown {
+  background: #0C0C0C !important;
+}
+
+.dropdown__link {
+  padding-bottom: 5px;
+  border-bottom: 1px solid #c4c4c400 !important;
+  text-align: center !important;
+  color: #BBBBBB !important;
+}
+
+.dropdown__link:hover {
+  background: #0C0C0C !important;
+  color: white !important;
+}
+
+.header-content > .header-logo {
+  -webkit-box-pack: start !important;
+  -ms-flex-pack: start !important;
+  justify-content: start !important;
+  gap: 150px;
+}
+
+.search__input {
+  color: #BBBBBB !important;
+  padding: 15px 261px 15px 10px !important;
+  background: #313131 !important;
+  border-radius: 0px !important;
+}
+
+.search__input::-webkit-input-placeholder {
+  width: 100%;
+  color: #BBBBBB !important;
+}
+
+.btn-search {
+  font-family: NotoSans-Light;
+  max-width: 190px;
+  color: white;
+  font-size: 14px;
+  width: 100%;
+  border: 1px solid white;
+  background: #313131;
+}
+
+.btn-search i {
+  font-size: 20px;
+  margin-left: 5px;
+}
+
+.header-products__dropdowns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center !important;
+  -ms-flex-pack: center !important;
+  justify-content: center !important;
+}
+
+.header-products__dropdowns .products-dropdown {
+  padding: 0 !important;
+  margin: 0 !important;
 }
