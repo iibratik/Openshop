@@ -109,7 +109,12 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: none !important;
 }
 
+html, body {
+  height: 100%;
+}
+
 body {
+  padding-bottom: 110%;
   background: #313131 !important;
 }
 
@@ -248,12 +253,6 @@ body {
   justify-content: space-between;
 }
 
-.carousel__img {
-  -webkit-filter: drop-shadow(-10px 5px 3px rgba(0, 0, 0, 0.25));
-  filter: drop-shadow(-10px 5px 3px rgba(0, 0, 0, 0.25));
-  left: 0;
-}
-
 .list-title {
   border-bottom: 1px solid rgba(255, 255, 255, 0);
   margin-bottom: 10px;
@@ -315,7 +314,12 @@ body {
 }
 
 .carousel__img {
+  -webkit-filter: drop-shadow(-10px 5px 3px rgba(0, 0, 0, 0.25));
+  filter: drop-shadow(-10px 5px 3px rgba(0, 0, 0, 0.25));
+  left: -7%;
+  position: relative;
   max-height: 700px;
+  height: 100%;
   background: -webkit-radial-gradient(50% 50%, 30% 50%, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0) 100%);
   background: -o-radial-gradient(50% 50%, 30% 50%, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0) 100%);
   background: radial-gradient(30% 50% at 50% 50%, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0) 100%);
@@ -347,7 +351,7 @@ body {
   font-family: NotoSans-SemiBold;
 }
 
-.carousel__link {
+.btn__link {
   padding: 12px 46px;
   border: 1px solid white;
   color: white;
@@ -375,7 +379,316 @@ body {
   display: none !important;
 }
 
-.cards-section {
-  margin-top: 30px;
+.body-bg {
+  margin-top: -30px;
+  padding-top: 30px;
   background: #313131 !important;
+}
+
+.header-slide {
+  margin-bottom: 30px;
+}
+
+.card-desc {
+  position: absolute;
+  left: 20px;
+  padding: 0 !important;
+  bottom: 15px;
+}
+
+.discount-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  text-align: center;
+  padding: 15px 10px;
+  background: #313131;
+  border-radius: 100%;
+}
+
+.discount-btn p {
+  font-family: NotoSans-Regular;
+  font-size: 20px;
+  color: white;
+  margin: 0 !important;
+  letter-spacing: 5%;
+}
+
+.card-big {
+  background: url(../img/cards-line/card-1.png);
+  background-position: center;
+  max-width: 630px;
+  position: relative;
+  min-height: 500px;
+  height: 100%;
+  max-height: 500px;
+  width: 100%;
+}
+
+.card-mid {
+  min-height: 235px;
+  max-height: 235px;
+  height: 100%;
+  width: 100%;
+  background: url(../img/cards-line/card-2.png);
+}
+
+.card-little {
+  min-height: 235px;
+  max-height: 235px;
+  max-width: 300px;
+  width: 100%;
+  height: 100%;
+  background: url(../img/cards-line/card-3.png) white;
+  -webkit-filter: drop-shadow(-10px 0px 4px rgba(0, 0, 0, 0.15));
+  filter: drop-shadow(-10px 0px 4px rgba(0, 0, 0, 0.15));
+}
+
+.card-little .card-desc {
+  top: 15px;
+  left: 20px;
+}
+
+.card-little .discount-btn {
+  top: 155px;
+  left: 20px;
+}
+
+.card-little:nth-child(2) {
+  min-height: 235px;
+  max-width: 300px;
+  background: url(../img/cards-line/card-4.png) white;
+  -webkit-filter: drop-shadow(-10px 0px 4px rgba(0, 0, 0, 0.15));
+  filter: drop-shadow(-10px 0px 4px rgba(0, 0, 0, 0.15));
+}
+
+.card-little:nth-child(2) .card-desc {
+  top: 15px;
+  left: 20px;
+}
+
+.card-little:nth-child(2) .discount-btn {
+  top: 155px;
+  left: 20px;
+}
+
+.little-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+  max-width: 627px;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  width: 100%;
+}
+
+.card-title {
+  font-family: NotoSans-Medium;
+  font-size: 24px;
+  letter-spacing: 5%;
+}
+
+.card-text {
+  font-size: 24px;
+  font-family: NotoSans-Light;
+  letter-spacing: 5%;
+}
+
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0 !important;
+  padding: 0 !important;
+  gap: 30px;
+}
+
+.cards-right {
+  max-width: 630px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.card-btn {
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+  margin-top: 30px;
+  margin-bottom: 150px;
+}
+
+.cards-line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.phone-card__btn {
+  color: white;
+  font-size: 14px;
+  max-height: 35px;
+  position: absolute;
+  bottom: 10px;
+  display: none;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  font-family: NotoSans-Regular;
+  padding: 5px 36px;
+  border: 3px solid white !important;
+}
+
+.phone-card {
+  background: url(../img/phone/phone-1.png);
+  max-width: 300px;
+  min-height: 350px;
+  width: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid rgba(255, 255, 255, 0);
+  padding-bottom: 15px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.phone-card:hover, .phone-card .phone-card__btn, .phone-card .heart {
+  border: 1px solid gray;
+}
+
+.phone-card:hover .phone-card__btn, .phone-card .phone-card__btn .phone-card__btn, .phone-card .heart .phone-card__btn {
+  display: block;
+}
+
+.phone-card:hover .heart, .phone-card .phone-card__btn .heart, .phone-card .heart .heart {
+  display: block;
+  border: none;
+}
+
+.phone-card:nth-child(2) {
+  background: url(../img/phone/phone-2.png);
+  background-repeat: no-repeat;
+}
+
+.phone-card:nth-child(3) {
+  background: url(../img/phone/phone-3.png);
+  background-repeat: no-repeat;
+}
+
+.phone-card:nth-child(4) {
+  background: url(../img/phone/phone-4.png);
+  background-repeat: no-repeat;
+}
+
+.phone-card__title {
+  font-size: 16px;
+  color: white;
+  font-family: NotoSans-Medium;
+}
+
+.phone-card__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  bottom: 35px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 5px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.phone-card__sub-title {
+  color: white;
+  font-family: NotoSans-Light;
+  font-size: 14px;
+}
+
+.card-line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.title {
+  font-family: NotoSans-SemiBold;
+  font-size: 36px;
+  color: white;
+}
+
+.phone-title {
+  margin-bottom: 30px;
+}
+
+.heart {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  right: -70px;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  top: 30px;
+  display: none;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background: url(https://cssanimation.rocks/images/posts/steps/heart.png) no-repeat;
+  background-position: 0 0;
+  cursor: pointer;
+  -webkit-animation: fave-heart 1s steps(28);
+  animation: fave-heart 1s steps(28);
+}
+
+.phone-content {
+  margin-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.phone-btn {
+  margin-top: 30px;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
 }
