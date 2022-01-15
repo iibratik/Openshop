@@ -692,3 +692,27 @@ body {
   -ms-grid-row-align: center;
   align-self: center;
 }
+
+.laptop-content {
+  margin-top: 150px;
+}
+
+.laptop-card {
+  background: url(../img/laptop/laptop-1.png);
+  background-repeat: no-repeat;
+}
+
+.laptop-card:nth-child(2) {
+  background: url(../img/laptop/laptop-2.png);
+  background-repeat: no-repeat;
+}
+
+.laptop-card:nth-child(3) {
+  background: url(../img/laptop/laptop-3.png);
+  background-repeat: no-repeat;
+}
+
+.laptop-card:nth-child(4) {
+  background: url(../img/laptop/laptop-4.png);
+  background-repeat: no-repeat;
+}
