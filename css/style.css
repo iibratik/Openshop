@@ -617,6 +617,7 @@ body {
   display: flex;
   position: absolute;
   bottom: 35px;
+  padding: 0 !important;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
@@ -831,4 +832,136 @@ footer {
   -ms-flex-item-align: center;
   -ms-grid-row-align: center;
   align-self: center;
+}
+
+.samsung__card {
+  background: url(../img/samsung/samsung-1.png);
+  background-repeat: no-repeat;
+}
+
+.samsung__card:nth-child(2) {
+  background: url(../img/samsung/samsung-2.png);
+  background-repeat: no-repeat;
+}
+
+.samsung__card:nth-child(3) {
+  background: url(../img/samsung/samsung-3.png);
+  background-repeat: no-repeat;
+}
+
+.samsung__card:nth-child(4) {
+  background: url(../img/samsung/samsung-4.png);
+  background-repeat: no-repeat;
+}
+
+.samsung__card h3 {
+  font-size: 15px;
+}
+
+.xiaomi-card {
+  background: url(../img/xiaomi/card-1.png);
+  background-repeat: no-repeat;
+}
+
+.xiaomi-card:nth-child(2) {
+  background: url(../img/xiaomi/card-2.png);
+  background-repeat: no-repeat;
+}
+
+.xiaomi-card:nth-child(3) {
+  background: url(../img/xiaomi/card-3.png);
+  background-repeat: no-repeat;
+}
+
+.xiaomi-card:nth-child(4) {
+  background: url(../img/xiaomi/card-4.png);
+  background-repeat: no-repeat;
+}
+
+.xbox {
+  background: url(../img/xbox/xbox.png);
+  padding-bottom: 350px;
+}
+
+.xbox-content h1 {
+  font-family: NotoSans-SemiBold;
+  font-size: 48px;
+  margin-top: 80px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.xbox__sub-title {
+  max-width: 454px;
+  width: 100%;
+  font-size: 24px;
+  line-height: 32.69px;
+  color: white;
+}
+
+.card-phone__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.main-card__text {
+  color: white;
+}
+
+.main-card__title {
+  font-size: 30px;
+  font-family: NotoSans-SemiBold;
+  letter-spacing: 5%;
+  -ms-flex-item-align: start;
+  -ms-grid-row-align: start;
+  align-self: start;
+  margin-bottom: 40px;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.body__main {
+  padding: 0;
+}
+
+.column-card {
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+}
+
+.main-card__sub-title {
+  font-family: NotoSans-Medium;
+  font-size: 24px;
+  letter-spacing: 5%;
+}
+
+.lists-title {
+  font-size: 24px;
+  font-family: NotoSans-Medium;
+  letter-spacing: 5%;
+  margin-bottom: 10px;
+}
+
+.list-specs {
+  list-style: disc;
+}
+
+.specs-lists {
+  margin-top: 20px;
+  padding-left: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 5px;
 }
