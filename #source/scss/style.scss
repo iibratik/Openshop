@@ -637,3 +637,31 @@ footer{
     flex-direction: column;
     gap: 5px;
 }
+.ps-acessors-content{
+    background: url(../img/ps/ps-acess.png);
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 145px;
+    align-items: flex-end;
+    color: white;
+}
+main{
+    background: #313131;
+}
+.ps-title{
+    font-size: 48px;
+    color: white;
+    font-family: NotoSans-SemiBold;
+    margin-right: 209px;
+}
+.sub-title{
+    margin-right: 30px;
+    line-height: 32,69px;
+    max-width: 454px;
+    margin-bottom: 116px;
+    font-size: 24px;
+}
+.btn-ps-acess{
+    margin-right: 163px;
+}
