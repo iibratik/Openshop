@@ -1,0 +1,89 @@
+@media (max-width:1200px){
+    .header-dropdown__link{
+        font-size: 16px;
+    }
+    .carousel-text{
+        position: static !important;
+        padding-bottom: 5.25em !important;
+    }
+    .carousel-item{
+        img {
+            max-width: 100%;
+            margin: 0 auto;
+            left: 0;
+            height: 100%;
+        }
+    }
+
+}
+@media (max-width: 991px){
+    .mob-logo{
+        display: block ;
+    }
+    .logo-main{
+        display: none;
+    }
+    .header-search{
+        width: 100%;
+        max-width: none;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+    .search__input{
+        padding: 15px !important;
+        border-radius:15px !important;
+    }
+    .btn-search{
+        width: 60% !important;
+        max-width: none;
+        padding: 15px 0;
+        border-radius: 15px;
+        font-size: 14px !important;
+    }
+    .downdrop-categories{
+        display: block !important;
+        margin-top: 100px;
+        margin-bottom: 20px;
+    }
+    .down-drop-bg{
+        background: #313131;
+
+    }
+    .header-products__dropdowns{
+        display: none;
+    }
+    .downdrop-btn{
+        text-align: center !important;
+        align-self: center;
+        align-items: center;
+        background: black !important;
+        border-radius: 15px !important;
+        color: white !important; 
+    }
+    .accordion-button::after{
+        display: none !important;
+    }
+    .downdrop-content{
+        background: #000;
+        padding: 20px;
+        margin-top: -15px;
+    }
+    .carousel-text{
+        padding: 0 !important;
+        gap: 15px;
+        h2{
+            font-size: 24px;
+        }
+    }
+    .header-slide{
+        margin-bottom: 90px;
+    }
+    .caousel-slide-indicators{
+        margin-bottom: -3.5em !important;
+    }
+    .little-cards{
+        flex-wrap: wrap;
+    }
+
+}

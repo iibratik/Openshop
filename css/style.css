@@ -111,6 +111,7 @@ h1, h2, h3, h4, h5, h6 {
 
 html, body {
   height: 100%;
+  background: #313131;
 }
 
 body {
@@ -198,7 +199,7 @@ body {
 
 .search__input {
   color: #BBBBBB !important;
-  padding: 15px 261px 15px 10px !important;
+  padding: 15px 10px !important;
   background: #313131 !important;
   border-radius: 0px !important;
 }
@@ -227,8 +228,15 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify !important;
+  -ms-flex-pack: justify !important;
+  justify-content: space-between !important;
   margin-top: 35px;
   margin-bottom: 50px;
+}
+
+.header-products__dropdowns ul {
+  padding: 0;
 }
 
 .header-dropdown__link {
@@ -1004,4 +1012,19 @@ main {
 
 .btn-ps-acess {
   margin-right: 163px;
+}
+
+.mob-logo {
+  display: none;
+}
+
+.header-search {
+  max-width: 630px;
+  max-height: 50px;
+  height: 100%;
+  width: 100%;
+}
+
+.downdrop-categories {
+  display: none !important;
 }

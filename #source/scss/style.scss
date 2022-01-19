@@ -11,6 +11,7 @@
 }
 html, body{
     height: 100%;
+    background: #313131;
 }
 body{
     padding-bottom: 110%;
@@ -73,7 +74,7 @@ body{
 }
 .search__input{
     color: #BBBBBB !important;
-    padding: 15px 261px 15px 10px !important;
+    padding: 15px 10px !important;
     background: #313131 !important;
     border-radius: 0px !important;
 }
@@ -96,8 +97,12 @@ body{
 }
 .header-products__dropdowns{
     display: flex;
+    justify-content: space-between !important;
     margin-top: 35px;
     margin-bottom: 50px;
+    ul{
+        padding: 0;
+    }
 }
 .header-dropdown__link{
     border-bottom: 1px solid rgba(255, 255, 255, 0);
@@ -664,4 +669,16 @@ main{
 }
 .btn-ps-acess{
     margin-right: 163px;
+}
+.mob-logo{
+    display: none ;
+}
+.header-search{
+    max-width: 630px;
+    max-height: 50px;
+    height: 100%;
+    width: 100%;
+}
+.downdrop-categories{
+    display: none !important; 
 }
