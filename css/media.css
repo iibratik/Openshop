@@ -216,8 +216,10 @@
   .cards-line {
     gap: 1em !important; }
   .ps-main-img img {
-    width: 150%;
-    left: -55%; }
+    -webkit-transform: scale(2);
+    -ms-transform: scale(2);
+    transform: scale(2);
+    left: -45%; }
   .subscribe-title {
     margin-top: 20px; }
   .footer-info .input-form {
