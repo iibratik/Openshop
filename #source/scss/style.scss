@@ -223,117 +223,7 @@ body{
 .header-slide{
     margin-bottom: 30px;
 }
-.card-desc{
-    position: absolute;
-    left: 20px;
-    padding: 0 !important;
-    bottom: 15px;
-}
-.discount-btn{
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    text-align: center;
-    padding: 15px 10px;
-    background: #313131;
-    border-radius: 100%;
-    p{
-        font-family: NotoSans-Regular;
-        font-size: 20px;
-        color: white;
-        margin: 0 !important;
-        letter-spacing: 5%;
-    }
-}
-.card-big{
-    background: url(../img/cards-line/card-1.png);
-    background-position: center;
-    max-width: 630px;
-    position: relative;
-    min-height: 500px;
-    height: 100%;
-    max-height: 500px;
-    width: 100%;
-}
-.card-mid{
-    min-height: 235px;
-    max-height: 235px;
-    height: 100%;
-    width: 100%;
-    background: url(../img/cards-line/card-2.png);
-}
-.card-little{
-    min-height: 235px;
-    max-height: 235px;
-    max-width: 300px;
-    width: 100%;
-    height: 100%;
-    background: url(../img/cards-line/card-3.png) white;
-    filter: drop-shadow(-10px 0px 4px rgba(0, 0, 0, 0.15));
-    .card-desc{
-        top: 15px;
-        left: 20px;
-    }
-    .discount-btn{
-       top: 155px;
-        left: 20px;
-    }
-    &:nth-child(2){
-        min-height: 235px;
-        max-width: 300px;
-        background: url(../img/cards-line/card-4.png) white;
-        filter: drop-shadow(-10px 0px 4px rgba(0, 0, 0, 0.15));
-        .card-desc{
-            top: 15px;
-            left: 20px;
-        }
-        .discount-btn{
-           top: 155px;
-            left: 20px;
-        }
-    }
-}
-.little-cards{
-    display: flex;
-    gap: 30px;
-    max-width: 627px;
-    flex-grow: 1;
-    width: 100%;
-}
-.card-title{
-    font-family: NotoSans-Medium;
-    font-size: 24px;
-    letter-spacing: 5%;
-}
-.card-text{
-    font-size: 24px;
-    font-family: NotoSans-Light;
-    letter-spacing: 5%;
-}
-.cards{
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 !important;
-    padding: 0 !important;
-    gap: 30px;
-}
-.cards-right{
-    max-width: 630px;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-}
-.card-btn{
-    align-self: center;
-    margin-top: 30px;
-    margin-bottom: 150px;
-}
-.cards-line{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
+
 .phone-card__btn{
     color: white;
     font-size: 14px;
@@ -681,4 +571,102 @@ main{
 }
 .downdrop-categories{
     display: none !important; 
+}
+.main-right-card{
+    width: 102.5%;
+}
+.cards-right{
+    background-color: #313131 !important;
+    border-radius: none !important;
+    border: none !important;
+}
+.card-img{
+    z-index: 1;
+}
+.card{
+    position: relative;
+}
+.card-body{
+    position: absolute;
+    bottom: 0;
+}
+.discount-sale{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: #313131;
+    font-size: 20px;
+    padding: 15px 10px;
+    font-family: NotoSans-Regular;
+    letter-spacing: 5%;
+    color: white;
+    border-radius: 50%;
+}
+.card-title{
+    font-size: 24px;
+    font-family: NotoSans-Medium;
+    letter-spacing: 5%;
+}
+.card-text{
+    font-size: 24px;
+    font-family: NotoSans-Light;
+    letter-spacing: 5%;
+}
+.little-cards{
+    .card-body{
+        top: 0;
+        max-width: 280px;
+        width: 100%;
+    }
+    .discount-sale{
+        top: 120px;
+        left: 10px;
+    }
+}
+.cards-content{
+    margin-bottom: 70px;
+}
+.main-title{
+    margin: 0 0 20px 80px;
+}
+.card-phone{
+    background-color: #313131 !important;
+    border: 1px solid rgba(255, 0, 0, 0) !important;
+}
+.phone-card-title{
+    font-size: 16px;
+    color: white;
+    font-family: NotoSans-Medium;
+    width: 100%;
+}
+.phone-cards-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 70px;
+}
+.phone-card-content{
+    text-align: center;
+}
+.phone-price{
+    color: white;
+    font-size: 14px;
+    font-family: NotoSans-Light;
+}
+.cards-line{
+    margin-bottom: 20px;
+    align-items: center !important;
+}
+.ps-content{
+    background: url(../img/ps/playstation.png);
+    background-position: center;
+}
+.ps-main-img{
+    display: none;
+  }
+.mob-footer{
+    display: none;
+}
+.card-phone img{
+    margin-bottom: 20px;
 }

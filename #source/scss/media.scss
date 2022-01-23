@@ -1,10 +1,23 @@
+@media (max-width: 1400px){
+    .watch-img{
+        position: relative;
+        top: 15px;
+    }
+    
+}
 @media (max-width:1200px){
+    .card{
+        left: -5px;
+    }
     .header-dropdown__link{
         font-size: 16px;
     }
     .carousel-text{
         position: static !important;
         padding-bottom: 5.25em !important;
+    }
+    .cards-line{
+        gap: 30px;
     }
     .carousel-item{
         img {
@@ -14,11 +27,82 @@
             height: 100%;
         }
     }
+    .phone-card-content{
+        padding: 1.5em 2em !important;
+    }
+    .expand-footer{
+        display: none;
+    }
+    .mob-footer{
+        display: block;
+    }
+    .cards-content{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
+    .card-phone img{
+        margin-bottom: 0;
+    }
+    .cards-content{
+        gap: 70px;
+    }
+    .phone-card-title{
+        font-size: 16px;
+    }
+    .main-title{
+        margin: 0 0 50px 80px;
+    }
+    .ps-main-img{
+        display: block;
+        text-align: center;
+        max-height: 500px;
+        height: 100%;
+        img{
+            position: relative;
+            width: 100%;
+            left: -20%;
+        }
+    }
+    .ps-title{
+        margin-right: 0;
+    }
+    .ps-content{
+        background: none;
+        text-align: center;
+    }
+    .footer-mobile-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .footer-social__lists{
+        padding: 0 !important;
+    }
+    .info-lists{
+        display: flex;
+        justify-content: center;
+        .list__link{
+            font-size: 18px;
+        }
+    }
+    .subscribe-title{
+        padding-bottom: 15px ;
+    }
+    
 }
+
 @media (max-width: 991px){
     .mob-logo{
         display: block ;
+    }
+    .cards-line{
+        gap: 15px;
+    }
+    .cards-line{
+        gap: 3rem !important;
     }
     .logo-main{
         display: none;
@@ -82,8 +166,119 @@
     .caousel-slide-indicators{
         margin-bottom: -3.5em !important;
     }
-    .little-cards{
-        flex-wrap: wrap;
+    .little-cards img{
+        bottom: -0.5em;
     }
 
+}
+@media (max-width:768px) {
+    .phone-card-title{
+        font-size: 16px;
+    }
+    .card-text{
+        font-size: 14px;
+    }
+    .main-title{
+        margin: 70px 0;
+        text-align: center;
+    }
+    .card-phone img{
+        bottom:4em;
+    }
+    .card-title{
+        font-size: 14px;
+    }
+    .card img{
+        bottom: 0;
+    }
+    .little-cards{ 
+        .discount-sale{  
+        top: 80px; 
+        left: 5px;
+    }
+    img{
+        bottom: -0.3em;
+    }
+}
+    .card-phone img{
+        margin-bottom: 40px;
+    }
+    .discount-sale{
+        font-size: 14px;
+    }
+    .main-right-card{
+        .discount-sale{
+            top: 5px;
+            left: 10px;
+        }
+    }
+    .discount-sale{
+        position: absolute;
+    }
+}
+@media (max-width:576px) {
+    .little-cards {
+        img{
+            position: relative;
+            bottom: -0.3em;
+            left: -1.5em ;
+        }
+        .discount-sale{
+            position: relative;
+        }
+        padding-bottom: 0;
+        .discount-sale{
+            position: relative;
+            top: 9em;
+            left: 0em;
+        }
+        .card-title{
+            min-width: 120px;
+        }
+        .card-body{
+            position: relative;
+            display: flex;
+            top: -50px;
+            align-items: center;
+            text-align: center;
+            flex-direction: column;
+        }
+    }
+    .main-right-card{
+        .card-body{
+            position: relative;
+        }
+        .discount-sale{
+            top: 75%;
+            left: 75%;
+        }
+    }
+    .phone-card-content{
+        min-width: 120px;
+        padding: 0 !important;
+    }
+    .cards-line{
+        gap: 1em !important;
+    }
+    .ps-main-img img{
+        width: 150%;
+        left: -55%;
+    }
+    .subscribe-title{
+        margin-top: 20px;
+    }
+    .footer-info{
+        .input-form{
+            flex-direction:column ;
+            align-items: center;
+            gap: 10px;
+        }
+        .btn__input{
+            position: relative;
+
+        }
+    }
+    .footer{
+        padding: 15px 0 !important;
+    }
 }
