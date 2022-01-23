@@ -5,58 +5,263 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Phone</title>
-    <link rel="stylesheet" href="css/media.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 <body class="body__main">
-    <header>
-      <nav class="navbar navbar-expand-lg header-nav">
-        <div class="container">
-          <a class="navbar-brand mob-logo" href="#"><img src="img/header/Logo.svg" alt=""></a>
-          <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon "></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled">Disabled</a>
-              </li>
+  <header>
+    <nav class="navbar navbar-expand-lg header-nav">
+      <div class="container">
+        <a class="navbar-brand mob-logo" href="#"><img src="img/header/Logo.svg" alt=""></a>
+        <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon "></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+           <ul class="navbar-nav nav-lists gap-3">
+                  <li class="nav-item dropdown languages">
+                    <a class="nav-link list__link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      English
+                    </a>
+                    <ul class="dropdown-menu language-dropdown" aria-labelledby="navbarDropdownMenuLink">
+                      <div class="language-content">
+                        <li><a class="dropdown-item dropdown__link" href="#">English</a></li>
+                        <li><a class="dropdown-item dropdown__link" href="#">Russian</a></li>
+                      </div>
+                    </ul>
+                  </li>
+                <li class="nav-item">
+                  <a class="nav-link list__link"  href="tel:(907) 555-0101"><i class="fas fa-phone-alt link__icon"></i> (907) 555-0101 </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link list__link" href="#"><i class="fas fa-user-alt"></i> Sing in</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link list__link" href="#"><i class="fas fa-shopping-cart"></i> Cart</a>
+                </li>
+              </ul>
+            
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
             </ul>
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
           </div>
         </div>
-      </nav>
-            <nav class="navbar container header-content">
-              <div class="container header-logo">
-                <a class="navbar-brand" href=""><img src="img/header/Logo.svg" alt=""></a>
-                <form class="d-flex header-search">
-                  <input class="form-control search__input " type="search" placeholder="What are you looking for?" aria-label="Search">
-                  <button class=" btn-search" type="submit"><i class="fas fa-search"></i> SEARCH OUR STORE</button>
-                </form>
+      </div>
+    </nav>
+          <nav class="navbar container d-flex gap-15 justify-content-around">
+              <a class="navbar-brand logo-main" href="phone-card.html"><img src="img/header/Logo.svg" alt=""></a>
+              <form class="d-flex header-search">
+                <input class="form-control search__input " type="search" placeholder="What are you looking for?" aria-label="Search">
+                <button class=" btn-search" type="submit"><i class="fas fa-search"></i> SEARCH OUR STORE</button>
+              </form>
+          </nav>
+          <div class="accordion container accordion-dark accordion-flush downdrop-categories" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header down-drop-bg" id="flush-headingOne">
+                <button class="accordion-button downdrop-btn  collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  Categories
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse downdrop-content collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <ul class="products-dropdown ">
+                  <li class="nav-item dropdown dropdown__list">
+                    <a class=" header-dropdown__link list__link" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Cell Phones & Tablets 
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark header-dropdown" aria-labelledby="navbarDarkDropdownMenuLink">
+                      <div class="dropdown-content">
+                        <ul class="dropdown-lists">
+                          <li class="list-title"><a href="cell-phones.html" class="list-title__link">Cell Phones</a></li>
+                          <li class="dropdown-list"><a href="" class="dropdown-list__link">Xiaomi</a></li>
+                          <li class="dropdown-list"><a href="phone-card.html" class="dropdown-list__link">Apple</a></li>
+                          <li class="dropdown-list"><a href="" class="dropdown-list__link">Samsung</a></li>
+                          <li class="dropdown-list"><a href="" class="dropdown-list__link">Huawei</a></li>
+                          <li class="dropdown-list"><a href="" class="dropdown-list__link">BQ</a></li>
+                          <li class="dropdown-list"><a href="" class="dropdown-list__link">Nokia</a></li>
+                          <li class="dropdown-list"><a href="" class="dropdown-list__link">Inoi</a></li>
+                          <li class="dropdown-list"><a href="" class="dropdown-list__link">Vivo</a></li>
+                        </ul>
+                        <ul class="dropdown-lists">
+                          <li class="list-title"><a href="" class="list-title__link">Tablets</a></li>
+                          <li class="dropdown-list"><a href="" class="dropdown-list__link">Xiaomi</a></li>
+                          <li class="dropdown-list"><a href="" class="dropdown-list__link">Apple</a></li>
+                          <li class="dropdown-list"><a href="" class="dropdown-list__link">Samsung</a></li>
+                          <li class="dropdown-list"><a href="" class="dropdown-list__link">Huawei</a></li>
+                          <li class="dropdown-list"><a href="" class="dropdown-list__link">BQ</a></li>
+                          <li class="dropdown-list"><a href="" class="dropdown-list__link">More...</a></li>
+                        </ul>
+  
+                      </div>
+                    </ul>
+                  </li>
+                </ul>
+                <ul class="products-dropdown ">
+                  <li class="nav-item dropdown dropdown__list">
+                    <a class=" header-dropdown__link list__link" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Computers & Laptop
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark header-dropdown" aria-labelledby="navbarDarkDropdownMenuLink">
+                      <div class="dropdown-content">
+                        <ul class="dropdown-lists">
+                          <li class="list-title"><a href="cell-phones.html" class="list-title__link">Cell Phones</a></li>
+                          <li class="dropdown-list"><a href="" class="dropdown-list__link">Xiaomi</a></li>
+                          <li class="dropdown-list"><a href="" class="dropdown-list__link">Apple</a></li>
+                          <li class="dropdown-list"><a href="" class="dropdown-list__link">Samsung</a></li>
+                          <li class="dropdown-list"><a href="" class="dropdown-list__link">Huawei</a></li>
+                          <li class="dropdown-list"><a href="" class="dropdown-list__link">BQ</a></li>
+                          <li class="dropdown-list"><a href="" class="dropdown-list__link">Nokia</a></li>
+                          <li class="dropdown-list"><a href="" class="dropdown-list__link">Inoi</a></li>
+                          <li class="dropdown-list"><a href="" class="dropdown-list__link">Vivo</a></li>
+                        </ul>
+                        <ul class="dropdown-lists">
+                          <li class="list-title"><a href="" class="list-title__link">Tablets</a></li>
+                          <li class="dropdown-list"><a href="" class="dropdown-list__link">Xiaomi</a></li>
+                          <li class="dropdown-list"><a href="" class="dropdown-list__link">Apple</a></li>
+                          <li class="dropdown-list"><a href="" class="dropdown-list__link">Samsung</a></li>
+                          <li class="dropdown-list"><a href="" class="dropdown-list__link">Huawei</a></li>
+                          <li class="dropdown-list"><a href="" class="dropdown-list__link">BQ</a></li>
+                          <li class="dropdown-list"><a href="" class="dropdown-list__link">More...</a></li>
+                        </ul>
+  
+                      </div>
+                    </ul>
+                  </li>
+                </ul>
+                <ul class="products-dropdown ">
+                  <li class="nav-item dropdown dropdown__list">
+                    <a class=" header-dropdown__link list__link" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      TV & Video
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark header-dropdown" aria-labelledby="navbarDarkDropdownMenuLink">
+                      <div class="dropdown-content">
+                        <ul class="dropdown-lists">
+                          <li class="list-title"><a href="cell-phones.html" class="list-title__link">Cell Phones</a></li>
+                          <li class="dropdown-list"><a href="" class="dropdown-list__link">Xiaomi</a></li>
+                          <li class="dropdown-list"><a href="" class="dropdown-list__link">Apple</a></li>
+                          <li class="dropdown-list"><a href="" class="dropdown-list__link">Samsung</a></li>
+                          <li class="dropdown-list"><a href="" class="dropdown-list__link">Huawei</a></li>
+                          <li class="dropdown-list"><a href="" class="dropdown-list__link">BQ</a></li>
+                          <li class="dropdown-list"><a href="" class="dropdown-list__link">Nokia</a></li>
+                          <li class="dropdown-list"><a href="" class="dropdown-list__link">Inoi</a></li>
+                          <li class="dropdown-list"><a href="" class="dropdown-list__link">Vivo</a></li>
+                        </ul>
+                        <ul class="dropdown-lists">
+                          <li class="list-title"><a href="" class="list-title__link">Tablets</a></li>
+                          <li class="dropdown-list"><a href="" class="dropdown-list__link">Xiaomi</a></li>
+                          <li class="dropdown-list"><a href="" class="dropdown-list__link">Apple</a></li>
+                          <li class="dropdown-list"><a href="" class="dropdown-list__link">Samsung</a></li>
+                          <li class="dropdown-list"><a href="" class="dropdown-list__link">Huawei</a></li>
+                          <li class="dropdown-list"><a href="" class="dropdown-list__link">BQ</a></li>
+                          <li class="dropdown-list"><a href="" class="dropdown-list__link">More...</a></li>
+                        </ul>
+  
+                      </div>
+                    </ul>
+                  </li>
+                </ul>
+                <ul class="products-dropdown">
+                  <li class="nav-item dropdown dropdown__list">
+                    <a class=" header-dropdown__link list__link" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Asseccories 
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark header-dropdown" aria-labelledby="navbarDarkDropdownMenuLink">
+                      <div class="dropdown-content">
+                        <ul class="dropdown-lists">
+                          <li class="list-title"><a href="cell-phones.html" class="list-title__link">Cell Phones</a></li>
+                          <li class="dropdown-list"><a href="" class="dropdown-list__link">Xiaomi</a></li>
+                          <li class="dropdown-list"><a href="" class="dropdown-list__link">Apple</a></li>
+                          <li class="dropdown-list"><a href="" class="dropdown-list__link">Samsung</a></li>
+                          <li class="dropdown-list"><a href="" class="dropdown-list__link">Huawei</a></li>
+                          <li class="dropdown-list"><a href="" class="dropdown-list__link">BQ</a></li>
+                          <li class="dropdown-list"><a href="" class="dropdown-list__link">Nokia</a></li>
+                          <li class="dropdown-list"><a href="" class="dropdown-list__link">Inoi</a></li>
+                          <li class="dropdown-list"><a href="" class="dropdown-list__link">Vivo</a></li>
+                        </ul>
+                        <ul class="dropdown-lists">
+                          <li class="list-title"><a href="" class="list-title__link">Tablets</a></li>
+                          <li class="dropdown-list"><a href="" class="dropdown-list__link">Xiaomi</a></li>
+                          <li class="dropdown-list"><a href="" class="dropdown-list__link">Apple</a></li>
+                          <li class="dropdown-list"><a href="" class="dropdown-list__link">Samsung</a></li>
+                          <li class="dropdown-list"><a href="" class="dropdown-list__link">Huawei</a></li>
+                          <li class="dropdown-list"><a href="" class="dropdown-list__link">BQ</a></li>
+                          <li class="dropdown-list"><a href="" class="dropdown-list__link">More...</a></li>
+                        </ul>
+  
+                      </div>
+                    </ul>
+                  </li>
+                </ul>
+                <ul class="products-dropdown ">
+                  <li class="nav-item dropdown dropdown__list">
+                    <a class=" header-dropdown__link list__link" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Home appliance
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark header-dropdown" aria-labelledby="navbarDarkDropdownMenuLink">
+                      <div class="dropdown-content">
+                        <ul class="dropdown-lists">
+                          <li class="list-title"><a href="cell-phones.html" class="list-title__link">Cell Phones</a></li>
+                          <li class="dropdown-list"><a href="" class="dropdown-list__link">Xiaomi</a></li>
+                          <li class="dropdown-list"><a href="" class="dropdown-list__link">Apple</a></li>
+                          <li class="dropdown-list"><a href="" class="dropdown-list__link">Samsung</a></li>
+                          <li class="dropdown-list"><a href="" class="dropdown-list__link">Huawei</a></li>
+                          <li class="dropdown-list"><a href="" class="dropdown-list__link">BQ</a></li>
+                          <li class="dropdown-list"><a href="" class="dropdown-list__link">Nokia</a></li>
+                          <li class="dropdown-list"><a href="" class="dropdown-list__link">Inoi</a></li>
+                          <li class="dropdown-list"><a href="" class="dropdown-list__link">Vivo</a></li>
+                        </ul>
+                        <ul class="dropdown-lists">
+                          <li class="list-title"><a href="" class="list-title__link">Tablets</a></li>
+                          <li class="dropdown-list"><a href="" class="dropdown-list__link">Xiaomi</a></li>
+                          <li class="dropdown-list"><a href="" class="dropdown-list__link">Apple</a></li>
+                          <li class="dropdown-list"><a href="" class="dropdown-list__link">Samsung</a></li>
+                          <li class="dropdown-list"><a href="" class="dropdown-list__link">Huawei</a></li>
+                          <li class="dropdown-list"><a href="" class="dropdown-list__link">BQ</a></li>
+                          <li class="dropdown-list"><a href="" class="dropdown-list__link">More...</a></li>
+                        </ul>
+  
+                      </div>
+                    </ul>
+                  </li>
+                </ul>
+                <ul class="products-dropdown ">
+                  <li class="nav-item dropdown dropdown__list">
+                    <a class=" header-dropdown__link list__link" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Video Games & Consoles 
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark header-dropdown" aria-labelledby="navbarDarkDropdownMenuLink">
+                      <div class="dropdown-content">
+                        <ul class="dropdown-lists">
+                          <li class="list-title"><a href="cell-phones.html" class="list-title__link">Cell Phones</a></li>
+                          <li class="dropdown-list"><a href="" class="dropdown-list__link">Xiaomi</a></li>
+                          <li class="dropdown-list"><a href="" class="dropdown-list__link">Apple</a></li>
+                          <li class="dropdown-list"><a href="" class="dropdown-list__link">Samsung</a></li>
+                          <li class="dropdown-list"><a href="" class="dropdown-list__link">Huawei</a></li>
+                          <li class="dropdown-list"><a href="" class="dropdown-list__link">BQ</a></li>
+                          <li class="dropdown-list"><a href="" class="dropdown-list__link">Nokia</a></li>
+                          <li class="dropdown-list"><a href="" class="dropdown-list__link">Inoi</a></li>
+                          <li class="dropdown-list"><a href="" class="dropdown-list__link">Vivo</a></li>
+                        </ul>
+                        <ul class="dropdown-lists">
+                          <li class="list-title"><a href="" class="list-title__link">Tablets</a></li>
+                          <li class="dropdown-list"><a href="" class="dropdown-list__link">Xiaomi</a></li>
+                          <li class="dropdown-list"><a href="" class="dropdown-list__link">Apple</a></li>
+                          <li class="dropdown-list"><a href="" class="dropdown-list__link">Samsung</a></li>
+                          <li class="dropdown-list"><a href="" class="dropdown-list__link">Huawei</a></li>
+                          <li class="dropdown-list"><a href="" class="dropdown-list__link">BQ</a></li>
+                          <li class="dropdown-list"><a href="" class="dropdown-list__link">More...</a></li>
+                        </ul>
+  
+                      </div>
+                    </ul>
+                  </li>
+                </ul>
               </div>
-            </nav>
-            <div class="header-products__dropdowns  container">
+            </div>
+            </div>
+            <div class="header-products__dropdowns container">
               <ul class="products-dropdown ">
                 <li class="nav-item dropdown dropdown__list">
                   <a class=" header-dropdown__link list__link" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -153,7 +358,7 @@
                   </ul>
                 </li>
               </ul>
-              <ul class="products-dropdown ">
+              <ul class="products-dropdown">
                 <li class="nav-item dropdown dropdown__list">
                   <a class=" header-dropdown__link list__link" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Asseccories 
@@ -250,11 +455,11 @@
                 </li>
               </ul>
             </div>
-    </header>
+          </header>
     <main>
         <div class="card-phone__content container">
             <img class="column-card" src="img/phone-card/phone-group.png" alt="">
-            <img src="img/phone-card/main-img.png" alt="">
+            <img class="main-phone-card" src="img/phone-card/main-img.png" alt="">
             <div class="main-card__text">
                 <h2 class="main-card__title">
                     Apple iPhone 12 Pro Max 128GB (Gray)
@@ -276,9 +481,9 @@
                 </ul>
             </div>
         </div>
-        <div class="ps-acess">
-            
-            <div class="ps-acessors-content container">
+        <div class="container ps-acess">
+            <img src="img/ps/ps-acess.png" alt="" class="ps-content__img">
+            <div class="ps-acessors-content">
                 <h2 class="ps-title">
                   Plastation VR
                 </h2>
@@ -287,30 +492,63 @@
               </div>
         </div>
     </main>
-      <footer>
-        <div class="footer-content container">
-          <a href="" class="logo"><img src="img/header/Logo.svg" alt=""></a>
-          <div class="footer-info">
-            <form action="" class="subscribe">
-              <h2 class="title subscribe-title">Subscribe to Newslatter</h2>
-              <div class="input-group mb-3 input-form">
-                <input type="text" class="form-control input-mail" aria-label="Recipient's username" aria-describedby="button-addon2">
-                <button class="btn__input" type="button" id="button-addon2">SING UP</button>
-              </div>
-            </form>
-            <ul class="info-lists">
-              <li class="info-list"><a href="" class="list__link">News</a></li>
-              <li class="info-list"><a href="" class="list__link">Help</a></li>
-              <li class="info-list"><a href="" class="list__link">Contat</a></li>
-            </ul>
-          </div>
-          <ul class="footer-social__lists">
-            <li class="social__list"><a href="" class="list__link"><img src="img/icons/telegram-icon.svg" alt=""></a></li>
-            <li class="social__list"><a href="" class="list__link"><img src="img/icons/facebook-icon.svg" alt=""></a></li>
-            <li class="social__list"><a href="" class="list__link"><img src="img/icons/instagram-icon.svg" alt=""></a></li>
+    <footer class="expand-footer">
+      <div class="footer-content container">
+        <a href="" class="logo"><img src="img/header/Logo.svg" alt=""></a>
+        <div class="footer-info">
+          <form action="" class="subscribe">
+            <h2 class="title subscribe-title">Subscribe to Newslatter</h2>
+            <div class="input-group mb-3 input-form">
+              <input type="text" class="form-control input-mail" aria-label="Recipient's username" aria-describedby="button-addon2">
+              <button class="btn__input" type="button" id="button-addon2">SING UP</button>
+            </div>
+          </form>
+          <ul class="info-lists">
+            <li class="info-list"><a href="" class="list__link">News</a></li>
+            <li class="info-list"><a href="" class="list__link">Help</a></li>
+            <li class="info-list"><a href="" class="list__link">Contat</a></li>
           </ul>
         </div>
+        <ul class="footer-social__lists">
+          <li class="social__list"><a href="" class="list__link"><img src="img/icons/telegram-icon.svg" alt=""></a></li>
+          <li class="social__list"><a href="" class="list__link"><img src="img/icons/facebook-icon.svg" alt=""></a></li>
+          <li class="social__list"><a href="" class="list__link"><img src="img/icons/instagram-icon.svg" alt=""></a></li>
+        </ul>
+      </div>
       </footer>
+      <footer class="mob-footer">
+        <nav class="navbar footer navbar-expand-xl navbar-dark">
+          <div class="container-fluid">
+            <a href="" class="logo"><img src="img/header/Logo.svg" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse footer-mobile-content navbar-collapse" id="navbarSupportedContent">
+              <div class="footer-info">
+                <form action="" class="subscribe">
+                  <h2 class="title subscribe-title">Subscribe to Newslatter</h2>
+                  <div class="input-group mb-3 input-form">
+                    <input type="text" class="form-control input-mail" aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <button class="btn__input" type="button" id="button-addon2">SING UP</button>
+                  </div>
+                </form>
+                <ul class="info-lists">
+                  <li class="info-list"><a href="" class="list__link">News</a></li>
+                  <li class="info-list"><a href="" class="list__link">Help</a></li>
+                  <li class="info-list"><a href="" class="list__link">Contat</a></li>
+                </ul>
+              </div>
+              <ul class="footer-social__lists">
+                <li class="social__list"><a href="" class="list__link"><img src="img/icons/telegram-icon.svg" alt=""></a></li>
+                <li class="social__list"><a href="" class="list__link"><img src="img/icons/facebook-icon.svg" alt=""></a></li>
+                <li class="social__list"><a href="" class="list__link"><img src="img/icons/instagram-icon.svg" alt=""></a></li>
+              </ul>
+             
+            </div>
+          </div>
+        </nav>
+      </footer>
+    </footer>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   </body>
 </html>

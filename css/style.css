@@ -736,9 +736,8 @@ footer {
   background-repeat: no-repeat;
 }
 
-.xbox {
-  background: url(../img/xbox/xbox.png);
-  padding-bottom: 350px;
+.xbox-content-img {
+  width: 100%;
 }
 
 .xbox-content h1 {
@@ -824,21 +823,25 @@ footer {
   gap: 5px;
 }
 
-.ps-acessors-content {
-  background: url(../img/ps/ps-acess.png);
+.ps-acess {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  padding-top: 20px;
-  padding-bottom: 145px;
-  -webkit-box-align: end;
-  -ms-flex-align: end;
-  align-items: flex-end;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.ps-content__img {
+  position: relative;
+  right: -15em;
+}
+
+.ps-acessors-content {
+  position: relative;
+  left: -15em;
   color: white;
+  margin-bottom: 20px;
 }
 
 main {
